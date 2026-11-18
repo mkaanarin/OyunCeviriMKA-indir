@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OyunCeviriMKA — PS5 oyunları Türkçe</title>
+<meta name="description" content="PS5 oyunlarındaki İngilizce altyazı ve konuşmaları canlı olarak Türkçeye çevirir, TV'de gösterir ve konuşanın sesiyle seslendirir. Ücretsiz.">
+<style>
+  :root {
+    --bg: #0f1420; --bg2: #161d2d; --card: #1b2336; --line: #2a3550;
+    --text: #eef1f7; --soft: #a9b4c9; --accent: #ff6b3d; --accent2: #4f8cff; --ok: #3ccf8e;
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent2); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 64px 0 40px; background: radial-gradient(1200px 400px at 20% -10%, #2a1d2a 0%, transparent 60%), radial-gradient(900px 400px at 100% 0%, #16274a 0%, transparent 60%); }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .3px; color: var(--soft); }
+  .brand b { color: var(--text); font-size: 20px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 18px var(--accent); }
+  h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 22px 0 14px; letter-spacing: -1px; }
+  h1 span { color: var(--accent); }
+  .lead { font-size: clamp(18px, 2.3vw, 21px); color: var(--soft); max-width: 720px; margin: 0; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .pill { border: 1px solid var(--line); background: var(--bg2); color: var(--soft); border-radius: 999px; padding: 6px 12px; font-size: 14px; }
+  section { padding: 44px 0; }
+  h2 { font-size: 28px; margin: 0 0 18px; letter-spacing: -.4px; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+  .card h3 { margin: 0; font-size: 21px; }
+  .card p { margin: 0; color: var(--soft); font-size: 15.5px; }
+  .tag { font-size: 12.5px; font-weight: 700; letter-spacing: .6px; color: var(--accent); text-transform: uppercase; }
+  .btn { margin-top: auto; display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 13px 18px; border-radius: 12px;
+         background: var(--accent); color: #1a0e08; font-weight: 700; text-decoration: none; text-align: center; }
+  .btn.secondary { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn.disabled { background: #2a3248; color: var(--soft); pointer-events: none; }
+  .note { font-size: 13.5px; color: var(--soft); }
+  .steps { counter-reset: s; display: grid; gap: 12px; }
+  .step { display: flex; gap: 14px; align-items: flex-start; background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  .step::before { counter-increment: s; content: counter(s); flex: 0 0 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+                  background: var(--accent); color: #1a0e08; font-weight: 800; }
+  .step p { margin: 0; color: var(--soft); }
+  .step b { color: var(--text); }
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .flow div { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .flow strong { display: block; font-size: 18px; margin-bottom: 4px; }
+  .flow span { color: var(--soft); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--soft); font-weight: 600; }
+  .yes { color: var(--ok); font-weight: 700; } .no { color: #ff7a7a; font-weight: 700; }
+  details { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 650; }
+  details p, details li { color: var(--soft); }
+  code { background: #0b0f19; border: 1px solid var(--line); border-radius: 8px; padding: 2px 7px; font-size: 14px; color: #ffd2c2; word-break: break-all; }
+  footer { padding: 36px 0 60px; color: var(--soft); font-size: 14px; border-top: 1px solid var(--line); }
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span><b>OyunCeviriMKA</b></div>
+    <h1>PS5 oyunları <span>Türkçe</span>,<br>altyazısıyla ve sesiyle.</h1>
+    <p class="lead">Oyundaki İngilizce altyazıları ve konuşmaları canlı olarak Türkçeye çevirir, TV'de oyunun üstünde gösterir ve
+      konuşanın kendi sesine benzer bir sesle Türkçe seslendirir. Tamamen ücretsiz.</p>
+    <div class="pills">
+      <span class="pill">Ücretsiz</span><span class="pill">Hesap gerekmez</span><span class="pill">Samsung · LG · Android TV</span>
+      <span class="pill">iPhone · Android</span><span class="pill">Mac ile konuşanın sesi</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="indir">
+    <h2>İndir</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">iPhone</span>
+        <h3>TestFlight ile kur</h3>
+        <p>App Store'dan önce <b>TestFlight</b> uygulamasını kurun, sonra aşağıdaki butona dokunun. UDID ya da kablo gerekmez.</p>
+        <a class="btn disabled" id="testflight" href="#">TestFlight linki yakında</a>
+        <span class="note">iOS 16 ve üstü. iPhone 15 Pro ve sonrasında çeviri telefondaki Apple Intelligence ile yapılır.</span>
+      </div>
+      <div class="card">
+        <span class="tag">Android</span>
+        <h3>APK indir</h3>
+        <p>Dosyayı indirip açın; "bilinmeyen kaynaklar" izni isterse verin. Altyazı çevirisi ve sesli çeviri.</p>
+        <a class="btn" href="https://github.com/mkaanarin/OyunCeviriMKA-indir/releases/latest/download/OyunCeviriMKA-Android.apk">Android APK (99 MB)</a>
+        <span class="note">Android 8 ve üstü. Mac sunucusu desteği bu sürümde yok, sonraki sürümde gelecek.</span>
+      </div>
+      <div class="card">
+        <span class="tag">Mac (isteğe bağlı)</span>
+        <h3>Ses sunucusu</h3>
+        <p>Mac'iniz varsa: Whisper ile daha iyi duyma, Apple Intelligence ile doğal çeviri ve <b>konuşanın kendi sesiyle</b> seslendirme.</p>
+        <a class="btn secondary" href="https://github.com/mkaanarin/OyunCeviriMKA-indir/releases/latest/download/OyunCeviriMKA-MacSunucu.zip">Mac sunucusu (26 MB)</a>
+        <span class="note">Apple Silicon (M1+) ve macOS 26 önerilir. Kurulum aşağıda.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="nasil">
+    <h2>Nasıl çalışır?</h2>
+    <div class="flow">
+      <div><strong>🎮 PS5</strong><span>Oyun TV'de her zamanki gibi HDMI'dan oynanır. Gecikme yok.</span></div>
+      <div><strong>📱 Telefon</strong><span>Uzaktan Oynatma ile görüntüyü ve sesi alır, okur, Türkçeye çevirir. Arka planda çalışır.</span></div>
+      <div><strong>💻 Mac (isteğe bağlı)</strong><span>Konuşmayı duyar, doğal çevirir, konuşanın sesiyle seslendirir.</span></div>
+      <div><strong>📺 TV</strong><span>OyunCeviriMKA TV uygulaması altyazıyı oyunun üstüne yazar, Türkçe sesi çalar.</span></div>
+    </div>
+  </section>
+
+  <section id="gerekenler">
+    <h2>Gerekenler</h2>
+    <div class="table-wrap"><table>
+      <tr><th>Ne</th><th>Not</th></tr>
+      <tr><td>PS5</td><td>Uzaktan Oynatma açık, internete bağlı.</td></tr>
+      <tr><td>İkinci PSN hesabı</td><td>Ücretsiz. PS5'e kullanıcı olarak eklenir; kendi hesabınızla bağlanınca oyununuz kesilir.</td></tr>
+      <tr><td>TV</td><td><span class="yes">Samsung</span> (2019+), <span class="yes">LG</span> (webOS), <span class="yes">Android TV / Google TV</span>. <span class="no">Apple TV olmaz</span> (HDMI görüntüsüne erişemez).</td></tr>
+      <tr><td>Aynı Wi-Fi</td><td>PS5, TV, telefon (ve varsa Mac) aynı ev ağında.</td></tr>
+    </table></div>
+  </section>
+
+  <section id="kurulum">
+    <h2>Kurulum</h2>
+    <div class="steps">
+      <div class="step"><p><b>PS5:</b> Ayarlar › Sistem › Uzaktan Oynatma › <b>Uzaktan Oynatmayı Etkinleştir</b>. İkinci PSN hesabını PS5'e kullanıcı olarak ekleyin.
+        Ayrıca Ayarlar › Sistem › HDMI › <b>HDMI Cihaz Bağlantısını Etkinleştir</b>'i kapatın (TV kendiliğinden HDMI'ya geçmesin).</p></div>
+      <div class="step"><p><b>Telefon:</b> Uygulamayı açın, ikinci PSN hesabıyla giriş yapın. PS5'te o kullanıcıyla Ayarlar › Sistem › Uzaktan Oynatma ›
+        <b>Cihazı Bağla</b>'ya basıp çıkan 8 haneli kodu telefona yazın.</p></div>
+      <div class="step"><p><b>TV uygulaması:</b> Telefonda Ayarlar › Bağlantılar › <b>TV uygulamasını bu telefondan kur</b>. Markanızı seçin; uygulama her adımı
+        ekranda anlatır (Samsung'da geliştirici modu + bir kez Samsung girişi, LG'de geliştirici hesabı + parola, Android TV'de hata ayıklama).</p></div>
+      <div class="step"><p><b>Oyna:</b> Oyunda İngilizce altyazıyı açın, telefonda <b>Başlat</b>'a basın. Ayarlar'dan sesli çeviri, Türkçe seslendirme ve
+        ekranı sürekli çevir seçeneklerini açabilirsiniz; <b>Kaydet</b>'e basınca hemen uygulanır.</p></div>
+    </div>
+  </section>
+
+  <section id="mac">
+    <h2>Mac sunucusu (isteğe bağlı)</h2>
+    <div class="steps">
+      <div class="step"><p>Yukarıdan <b>Mac sunucusu</b>'nu indirin, zip'i açın ve <code>OyunCeviri-SesSunucusu</code> klasörünü <b>Masaüstüne</b> koyun.</p></div>
+      <div class="step"><p>Terminal'e yapıştırın: <code>bash ~/Desktop/OyunCeviri-SesSunucusu/kur.sh</code><br>
+        İlk seferde gerekenleri kendisi kurar (~3 GB). Mac her açıldığında kendiliğinden başlasın: sonuna <code>--kalici</code> ekleyin.</p></div>
+      <div class="step"><p>"ses sunucusu hazır" yazınca telefonda Başlat'a basın. Telefon Mac'i aynı Wi-Fi'da <b>kendisi bulur</b>.
+        Bulamazsa: Ayarlar › Mac sunucusu › Gelişmiş'e Mac'in adresini yazın (ör. <code>192.168.1.20:8790</code>).</p></div>
+    </div>
+    <p class="note">Mac yoksa da olur: telefon kendi tanıma ve çevirisiyle devam eder (iPhone 15 Pro ve sonrasında Apple Intelligence ile).</p>
+  </section>
+
+  <section id="sss">
+    <h2>Sık sorulanlar</h2>
+    <details><summary>Ücretli mi? Verilerim bir yere gidiyor mu?</summary>
+      <p>Tamamen ücretsiz. Çeviri ve seslendirme telefonunuzda ya da kendi Mac'inizde yapılır; görüntü ve ses internete gönderilmez.</p></details>
+    <details><summary>iPhone için UDID vermem gerekiyor mu?</summary>
+      <p>Hayır. TestFlight linkiyle kurulur; yalnız App Store'dan TestFlight uygulaması gerekir.</p></details>
+    <details><summary>Apple TV'de çalışır mı?</summary>
+      <p>Hayır. Apple TV, PS5'in HDMI görüntüsünü alıp üstüne yazı yazamaz. Samsung, LG ya da Android TV gerekir.</p></details>
+    <details><summary>Windows bilgisayarı sunucu yapabilir miyim?</summary>
+      <p>Şimdilik yalnız Mac. Windows desteği sonraki sürümde planlanıyor.</p></details>
+    <details><summary>YouTube / Netflix çevirir mi?</summary>
+      <p>Hayır. PS5 video uygulamalarının görüntüsünü ve sesini Uzaktan Oynatma'ya vermez. Oyunlar içindir.</p></details>
+    <details><summary>"Uzaktan oynatma bağlandı" yazısı ekranda kalıyor</summary>
+      <p>PS5'in kendi göstergesidir. Ayarlar › Bildirimler'den açılır bildirimleri kapatmayı ya da Rahatsız Etme'yi açmayı deneyin.</p></details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    OyunCeviriMKA — Mustafa Kaan Arın. <a href="https://github.com/yorulmazsinan/couchsubs">CouchSubs</a> (Sinan Yorulmaz) tabanlıdır ve
+    <b>GNU AGPL-3.0</b> ile lisanslanır; değiştirilmiş kaynak kodu isteyene verilir (GitHub üzerinden ulaşın: <a href="https://github.com/mkaanarin">@mkaanarin</a>).
+    Kullanılan açık kaynak bileşenler: chiaki-ng (AGPL-3.0), Seed-VC (GPL-3.0), Kyutai Pocket TTS (MIT), Pocket TTS Turkish (wite-tech, CC BY 4.0),
+    whisper.cpp (MIT). PlayStation, Sony Interactive Entertainment'ın ticari markasıdır; bu proje Sony ile bağlantılı değildir.
+  </div>
+</footer>
+</body>
+</html>
